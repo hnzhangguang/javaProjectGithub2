@@ -15,6 +15,7 @@ public class Test01 implements MessageInterface{
 //            test01.objGet();
 //        };
 //        messageInterface.get();
+
         /**
          * 方法引入规则：方法引入的方法返回类型 参数列表 必须要和函数接口保持一致
          */
