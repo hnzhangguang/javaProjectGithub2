@@ -1,11 +1,11 @@
 package main.java.com.mayikt.stream;
 
-import com.mayikt.entity.UserEntity;
+
+import main.java.com.mayikt.entity.UserEntity;
 
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.function.BiConsumer;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 

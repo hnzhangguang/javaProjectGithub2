@@ -3,7 +3,6 @@ package main.java.com.mayikt.stream;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.OptionalLong;
-import java.util.function.LongBinaryOperator;
 import java.util.stream.LongStream;
 
 /**

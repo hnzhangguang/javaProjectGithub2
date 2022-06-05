@@ -1,6 +1,7 @@
 package main.java.com.mayikt.stream;
 
-import com.mayikt.entity.UserEntity;
+
+import main.java.com.mayikt.entity.UserEntity;
 
 import java.util.ArrayList;
 import java.util.Optional;

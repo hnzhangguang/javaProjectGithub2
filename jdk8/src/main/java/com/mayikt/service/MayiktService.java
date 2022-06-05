@@ -1,6 +1,7 @@
 package main.java.com.mayikt.service;
 
-import com.mayikt.Test23;
+
+import main.java.com.mayikt.Test23;
 
 /**
  * @ClassName MayiktInteface

@@ -8,7 +8,7 @@ import main.java.com.mayikt.service.MessageInterface;
  * @Author 蚂蚁课堂余胜军 QQ644064779 www.mayikt.com
  * @Version V1.0
  **/
-public class Test01 {
+public class Test01 implements MessageInterface{
     public static void main(String[] args) {
         Test01 test01 = new Test01();
 //        MessageInterface messageInterface = () -> {
@@ -21,8 +21,8 @@ public class Test01 {
         // 方法引入
 //        MessageInterface messageInterface2 = Test01::staticGet;
 //        messageInterface2.get();
-        MessageInterface messageInterface2 = test01::objGet;
-        messageInterface2.get();
+//        MessageInterface messageInterface2 = test01::objGet;
+//        messageInterface2.get();
     }
 
     public static void staticGet() {
@@ -31,5 +31,10 @@ public class Test01 {
 
     public void objGet() {
         System.out.println("objGet");
+    }
+
+    @Override
+    public String get(Integer a, Integer b) {
+        return null;
     }
 }
