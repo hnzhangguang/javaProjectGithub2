@@ -1,4 +1,4 @@
-package com.zhangg.rpc.rpc02;
+package rpc.rpc02;
 
 public class Client {
 

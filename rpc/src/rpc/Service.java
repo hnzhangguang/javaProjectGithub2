@@ -1,4 +1,4 @@
-package com.zhangg.rpc;
+package rpc;
 
 public class Service {
 
