@@ -1,0 +1,19 @@
+package com.zhangg.algorithm;
+
+
+/**
+ * 打印整数的32位
+ */
+public class code01_print32 {
+
+    public static void print(int num) {
+        for (int i = 31; i >= 0; i--) {
+            System.out.print((num & (1 << i)) == 0 ? "0" : "1");
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
