@@ -1,5 +1,9 @@
 package class01;
 
+
+/**
+ * 打印二级制数
+ */
 public class Code01_PrintBinary {
 
 	public static void print(int num) {

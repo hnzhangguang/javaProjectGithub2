@@ -1,5 +1,10 @@
 package class01;
 
+
+/**
+ * Çó½×³ËÖ®ºÍ
+ * 1!+2!+3!+...
+ */
 public class Code02_SumOfFactorial {
 
 	public static long f1(int N) {

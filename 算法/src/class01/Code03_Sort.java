@@ -1,27 +1,41 @@
 package class01;
 
+/**
+ * 简介: 排序
+ * 功能:
+ *  作者: zhangg
+ */
 public class Code03_Sort {
 
+	// 交换
 	public static void swap(int[] arr, int i, int j) {
 		int tmp = arr[j];
 		arr[j] = arr[i];
 		arr[i] = tmp;
 	}
 
+	/**
+	 * 简介: 选择排序
+	 * 功能:
+	 */
 	public static void selectSort(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;
 		}
 		int N = arr.length;
-		for (int i = 0; i < N; i++) {
+		for (int i = 0; i < N; i++) { // 每一轮找出剩余最小的数并交换
 			int minValueIndex = i;
 			for (int j = i + 1; j < N; j++) {
-				minValueIndex = arr[j] < arr[minValueIndex] ? j : minValueIndex;
+				minValueIndex = arr[j] < arr[minValueIndex] ? j : minValueIndex;//找出值的下标
 			}
 			swap(arr, i, minValueIndex);
 		}
 	}
 
+	/**
+	 * 简介: 冒泡排序
+	 * 功能:
+	 */
 	public static void bubbleSort(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;
@@ -36,6 +50,10 @@ public class Code03_Sort {
 		}
 	}
 
+	/**
+	 * 简介: 插入排序
+	 * 功能:
+	 */
 	public static void insertSort1(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;
