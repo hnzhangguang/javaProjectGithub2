@@ -6,6 +6,11 @@ package class01;
  */
 public class Code01_PrintBinary {
 
+
+	/**
+	 * 简介:  打印一个数值的二级制
+	 * 功能:
+	 */
 	public static void print(int num) {
 		for (int i = 31; i >= 0; i--) {
 			System.out.print((num & (1 << i)) == 0 ? "0" : "1");
@@ -15,9 +20,9 @@ public class Code01_PrintBinary {
 
 	public static void main(String[] args) {
 		// 32位
-//		int num = 4;
+		int num = 4;
 //
-//		print(num);
+		print(num);
 //		
 //		
 //		int test = 1123123;
