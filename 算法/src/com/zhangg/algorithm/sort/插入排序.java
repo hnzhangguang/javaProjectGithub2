@@ -1,5 +1,8 @@
 package com.zhangg.algorithm.sort;
 
+/**
+ * 插入后的都是有序的
+ */
 public class 插入排序 {
 
 
@@ -10,7 +13,28 @@ public class 插入排序 {
     }
 
 
+    /**
+     * 优化版本
+     * @param arr
+     */
     public static void insertSort(int[] arr){
+        if (null == arr || arr.length == 1){
+            return;
+        }
+        int N = arr.length;
+        for (int end = 1;end < N;end++){
+           for (int pre = end -1; pre>=0&&arr[pre]>arr[pre+1];pre--){
+               swap(arr,pre,pre+1);
+           }
+        }
+    }
+
+
+    /**
+     *
+     * @param arr
+     */
+    public static void insertSort2(int[] arr){
         if (null == arr || arr.length == 1){
             return;
         }
