@@ -52,12 +52,12 @@ public class Test03 {
         }
         //获取注解：
         Method myMethod = cls.getMethod("myMethod");
-        Annotation[] annotations = myMethod.getAnnotations();
+        Annotation[] annotations = myMethod.getAnnotations();//方法注解
         for (Annotation a : annotations) {
             System.out.println(a);
         }
         //获取异常：
-        Class[] exceptionTypes = myMethod.getExceptionTypes();
+        Class[] exceptionTypes = myMethod.getExceptionTypes();//异常类型
         for (Class c : exceptionTypes) {
             System.out.println(c);
         }
