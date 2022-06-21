@@ -11,6 +11,7 @@ public class Test04 {
         //获取字节码信息：
         Class cls = Student.class;
 
+        
         //获取运行时类的接口：
         Class[] interfaces = cls.getInterfaces();
         for(Class c:interfaces){
